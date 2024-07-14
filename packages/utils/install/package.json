@@ -1,0 +1,18 @@
+{
+  "name": "@pnut/pt-install",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "yuzheng",
+  "license": "MIT",
+  "peerDependencies": {
+    "vue": "^3.4.31"
+  },
+  "devDependencies": {
+    "vue": "^3.4.31"
+  }
+}
