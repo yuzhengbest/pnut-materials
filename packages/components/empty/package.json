@@ -1,7 +1,7 @@
 {
-  "name": "@pnut/empty",
+  "name": "@pnut/pt-empty",
   "version": "0.0.1",
-  "description": "元素包裹内容空呈现的效果",
+  "description": "元素包裹内容为空呈现的效果",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,8 +9,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "peerDependencies": {
+    "vue": "^3.4.31"
+  },
   "dependencies": {
-    "element-plus": "^2.7.6",
+    "@pnut/pt-install": "workspace:^",
     "vue": "^3.4.31"
   }
 }
