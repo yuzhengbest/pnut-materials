@@ -1,19 +1,18 @@
 {
-  "name": "@pnut/pt-empty",
+  "name": "@pnut/pt-install",
   "version": "0.0.1",
-  "description": "元素包裹内容为空呈现的效果",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "yuzheng",
+  "license": "MIT",
   "peerDependencies": {
     "vue": "^3.4.31"
   },
-  "dependencies": {
-    "@pnut/pt-install": "workspace:^",
+  "devDependencies": {
     "vue": "^3.4.31"
   }
 }

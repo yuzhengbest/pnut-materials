@@ -10,7 +10,7 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: ['plugin:vue/vue3-strongly-recommended', 'standard'],
+  extends: ['plugin:vue/vue3-strongly-recommended', 'standard', 'plugin:storybook/recommended'],
   parserOptions: {
     ecmaVersion: 12,
     parser: '@typescript-eslint/parser',

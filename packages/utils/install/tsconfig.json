@@ -3,6 +3,6 @@
   "compilerOptions": {
     "noImplicitAny": false
   },
-  "include": ["./src/*.ts", "./src/*.tsx", "./src/*.vue", "../../../sfc.d.ts", "src/index.ts"],
+  "include": ["./src/*.ts", "./src/*.tsx", "./src/*.vue", "../../../sfc.d.ts"],
   "exclude": ["node_modules"]
 }
