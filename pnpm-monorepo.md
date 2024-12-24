@@ -59,13 +59,19 @@ npx -p @storybook/cli sb init --type vue
 
 ### 安装第三发包
 
-- 项目根目录下安装：**-D**表示安装开发依赖，**-w**表示安装在项目根目录下，可以合起来**-Dw**
+- **-w**: --workspace-root的别名，即安装到项目根目录，作为所有子模块的公共依赖
 
+- **-D**: --save-dev的别名，即安装开发依赖
+
+- **--filter <package_name>** 或者是 **-F <package_name>**: 表示将该包安装在某一指定包名下，后面跟的名字必须是package.json中指定的name的名字
+
+
+项目根目录下安装开发依赖：**-Dw**
 ```sh
 pnpm add vue -Dw
 ```
 
-- 项目根目录下安装packages中组件和公用方法的第三方包: **--filter** 或者是 **-F** 表示将该包安装在某一指定包名下，后面跟的名字必须是package.json中指定的name的名字
+- 项目根目录下安装packages中组件和公用方法的第三方包
 
 ```sh
 pnpm add lodash --filter @pnut/pt-card
