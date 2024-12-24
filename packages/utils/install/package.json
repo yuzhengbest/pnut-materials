@@ -1,14 +1,35 @@
 {
   "name": "@pnut/pt-install",
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
+  "description": "common utils",
+  "keywords": ["utils"],
   "author": "yuzheng",
   "license": "MIT",
+  "main": "./lib/index.cjs",
+  "module": "./es/index.mjs",
+  "typings": "./es/index.d.ts",
+  "unpkg": "./dist/index.iife.min.js",
+  "exports": {
+    ".": {
+      "import": "./es/index.mjs",
+      "require": "./lib/index.cjs",
+      "types": "./es/index.d.ts"
+    },
+    "./*": "./*"
+  },
+  "utilsConfig": {
+    "name": "PtInstall",
+    "title": "pnut工具库",
+    "groupID": 0,
+    "status": 1,
+    "category": "",
+    "screenshot": ""
+  },
+  "scripts": {
+    "build:tsc": "pnpm build:tsc-es && pnpm build:tsc-lib",
+    "build:tsc-es": "tsc --emitDeclarationOnly -d --outDir es/",
+    "build:tsc-lib": "tsc --emitDeclarationOnly -d --outDir lib/"
+  },
   "peerDependencies": {
     "vue": "^3.4.31"
   },

@@ -1,17 +1,31 @@
 {
+  "compileOnSave": false,
+  "buildOnSave": false,
   "compilerOptions": {
     "module": "esnext",
-    "target": "es6",
-    "jsx": "react",
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": false,
-    "lib": ["es6", "dom"],
+    "target": "esnext",
+    "lib": ["esnext", "dom"],
     "sourceMap": true,
-    "allowJs": true,
-    "noUnusedLocals": true,
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
     "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noImplicitAny": true,
-    "skipLibCheck": true
-  }
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "allowJs": true,
+    "experimentalDecorators": true,
+    "strict": true,
+    "types": ["unplugin-vue-define-options/macros-global", "element-plus/global"]
+  },
+  "vueCompilerOptions": {
+    "target": 3,
+    "plugins": [
+      "@vue-macros/volar/define-options"
+    ]
+  },
+  "include": ["sfc.d.ts", "packages/*/src"],
+  "exclude": ["node_modules", "build", "scripts"]
 }
