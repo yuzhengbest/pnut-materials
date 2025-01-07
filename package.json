@@ -1,7 +1,7 @@
 {
   "name": "pnut-materials",
-  "version": "0.0.1",
-  "private": true,
+  "version": "0.0.3",
+  "private": false,
   "author": "yuzheng",
   "license": "MIT",
   "description": "this is a vue3 materials",

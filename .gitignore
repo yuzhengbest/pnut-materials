@@ -8,9 +8,6 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dist*
-es*
-lib*
 *.local
 
 # Editor directories and files
@@ -24,3 +21,8 @@ lib*
 *.sln
 *.sw?
 *storybook.log
+
+# build files
+**/dist/**
+**/es/**
+**/lib/**
